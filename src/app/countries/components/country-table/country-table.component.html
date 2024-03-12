@@ -21,7 +21,7 @@
                 <td>{{country.name.common}}</td>
                 <td>{{country.population | number}}</td>
                 <td>
-                    <button (click)="onNavigate(country.cca2)">Ver mas</button>
+                    <a [routerLink]="['/countries/by/', country.cca2]">Ver Mas</a>
                 </td>
             </tr>
         </tbody>

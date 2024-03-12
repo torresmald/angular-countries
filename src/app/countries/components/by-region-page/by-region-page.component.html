@@ -1,6 +1,10 @@
 <h2>Por Pais</h2>
 <hr> 
-<app-search-box [placeholder]="'Busca por Region'" (onEmitValue)="searchByRegion($event)"></app-search-box>
+<!-- <app-search-box [placeholder]="'Busca por Region'" (onEmitValue)="searchByRegion($event)"></app-search-box> -->
+
+<button class="btn m-2" *ngFor="let region of regions" (click)="searchByRegion(region)" [ngClass]="selectedRegion === region ? 'btn-primary' : 'btn-secondary'">
+    {{region}}
+</button>
 <div class="row">
     <div class="col">
         <hr>

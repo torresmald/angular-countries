@@ -1,1 +1,1 @@
-<input type="text" [placeholder]="placeholder" class="form-group" (keyup.enter)="onSubmit(txtInput.value)" #txtInput>
+<input type="text" [value]="initialValue" [placeholder]="placeholder" class="form-group w-100" (keyup)="onSubmit(txtInput.value)" #txtInput>
