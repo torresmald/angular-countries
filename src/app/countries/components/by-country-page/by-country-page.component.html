@@ -1,0 +1,9 @@
+<h2>Por Pais</h2>
+<hr> 
+<app-search-box [placeholder]="'Busca por Pais'" (onEmitValue)="searchByCountry($event)"></app-search-box>
+<div class="row">
+    <div class="col">
+        <hr>
+        <app-country-table [countries]="countries"></app-country-table>
+    </div>
+</div>
